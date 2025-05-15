@@ -168,7 +168,10 @@ h2 {
     }
 }
 
-.form {
+#contact-form {
     background-color: #f9f9f9;
 }
 
+.estimateheader {
+    background-color: #f9f9f9;
+}
