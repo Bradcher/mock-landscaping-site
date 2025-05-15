@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock website</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#">AZ Landscaping LLC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                    <a class="btn btn-success me-3 my-1" href="#free-estimate-form">Free Estimate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" aria-current="page" href="#home-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#services-section">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#contact-form">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Bootstrap Carousel -->
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/Screenshot 2025-05-12 at 4.16.57 PM.png" class="d-block w-100" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Screenshot 2025-05-12 at 4.17.28 PM.png" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Screenshot 2025-05-12 at 4.17.53 PM.png" class="d-block w-100" alt="Third slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="home-section" class="info">
+        <h1>Serving Arizona Since 2012</h1>
+        <p>At AZ Landscaping LLC, we are passionate about transforming outdoor spaces into vibrant, beautiful environments that reflect the natural beauty of Arizona. With a commitment to quality craftsmanship and exceptional customer service, our team brings years of experience in residential and commercial landscaping. From custom designs and desert-friendly gardens to full-service maintenance and hardscaping, we tailor every project to fit your vision and needs. At AZ Landscaping LLC, we believe your outdoor space should be just as inspiring as your home — let us help you bring it to life.</p>
+      </div>
+
+      <div id="services-section" class="d-flex">
+        <div class="card flex-fill m-2">
+            <img src="./images/Screenshot 2025-05-12 at 8.06.54 PM.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Landscape Maintenance</h5>
+              <p class="card-text">Keep your yard looking its best all year long with our reliable landscape maintenance. From mowing to cleanups, we handle it all so you don’t have to.</p>
+              <a href="#" class="btn btn-success">Free Estimate</a>
+            </div>
+          </div>
+          <div class="card flex-fill m-2">
+            <img src="./images/Screenshot 2025-05-12 at 8.10.01 PM.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Grass Reseeding</h5>
+              <p class="card-text">Bring your lawn back to life with professional grass reseeding. We fill in patchy spots and restore lush, healthy growth for a greener yard.</p>
+              <a href="#" class="btn btn-success">Free Estimate</a>
+            </div>
+          </div>
+          <div class="card flex-fill m-2">
+            <img src="./images/Screenshot 2025-05-12 at 8.08.07 PM.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tree Trimming</h5>
+              <p class="card-text">Improve your property's safety and curb appeal with expert tree trimming. We shape and prune trees to promote healthy growth and a clean look.</p>
+              <a href="#" class="btn btn-success">Free Estimate</a>
+            </div>
+          </div>
+      </div>
+
+      <div id="free-estimate-form" class="estimateheader">
+        <h2>Get Your Free Estimate Today</h2>
+      </div>
+
+      <!-- Updated Form -->
+      <div id="contact-form" class="form">
+        <form id="contactForm">
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="col-md-4">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <div class="col-md-4">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="questions" class="form-label">Provide Service Details</label>
+            <textarea class="form-control" id="questions" name="questions" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+
+      <div class="map-container" style="margin: 2rem 0; text-align: center;">
+        <h2>Our Service Area</h2>
+        <p>AZ Landscaping proudly serves Chandler and the surrounding Arizona communities.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53076.96860528238!2d-111.89101564999999!3d33.30616055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba565163a2f3d%3A0xc83b645eb472b71c!2sChandler%2C%20AZ!5e0!3m2!1sen!2sus!4v1715730553652!5m2!1sen!2sus"
+          width="100%" height="450"
+          style="border:0; max-width: 1000px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+
+      <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 AZ Landscaping LLC. All rights reserved.</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="form.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
